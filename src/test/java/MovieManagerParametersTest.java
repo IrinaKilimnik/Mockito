@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 
 public class MovieManagerParametersTest {
     @Test
-    public void testFindLastWhenLimitEqualSize () {
+    public void testFindLastWhenLimitEqualSize() {
         MovieManager manager = new MovieManager(3);
         String movie1 = "Королева бензоколонки";
         String movie2 = "Гладиатор";
@@ -24,7 +24,7 @@ public class MovieManagerParametersTest {
     }
 
     @Test
-    public void testFindLastWhenLimitMoreSize () {
+    public void testFindLastWhenLimitMoreSize() {
         MovieManager manager = new MovieManager(7);
         String movie1 = "Королева бензоколонки";
         String movie2 = "Гладиатор";
@@ -47,7 +47,7 @@ public class MovieManagerParametersTest {
     }
 
     @Test
-    public void testFindLastWhenLimitLessSize () {
+    public void testFindLastWhenLimitLessSize() {
         MovieManager manager = new MovieManager(3);
         String movie1 = "Королева бензоколонки";
         String movie2 = "Гладиатор";

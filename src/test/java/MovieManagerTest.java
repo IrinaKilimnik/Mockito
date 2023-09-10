@@ -4,29 +4,29 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MovieManagerTest {
-@Test
+    @Test
     public void testFindAll() {
-    MovieManager manager = new MovieManager();
-    String movie1 = "Королева бензоколонки";
-    String movie2 = "Гладиатор";
-    String movie3 = "Бал вампиров";
-    String movie4 = "От заката до рассвета";
-    String movie5 = "Король лев";
-    String movie6 = "Ешь, молись, люби";
-    String movie7 = "Русалочка";
+        MovieManager manager = new MovieManager();
+        String movie1 = "Королева бензоколонки";
+        String movie2 = "Гладиатор";
+        String movie3 = "Бал вампиров";
+        String movie4 = "От заката до рассвета";
+        String movie5 = "Король лев";
+        String movie6 = "Ешь, молись, люби";
+        String movie7 = "Русалочка";
 
-manager.add(movie1);
-manager.add(movie2);
-manager.add(movie3);
-     String[] actual = manager.findAll();
-     String[] expected = {movie1, movie2, movie3};
+        manager.add(movie1);
+        manager.add(movie2);
+        manager.add(movie3);
+        String[] actual = manager.findAll();
+        String[] expected = {movie1, movie2, movie3};
 
-    Assertions.assertArrayEquals(expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
 
-}
+    }
 
     @Test
-    public void testFindLastWhenLimitEqualSize () {
+    public void testFindLastWhenLimitEqualSize() {
         MovieManager manager = new MovieManager();
         String movie1 = "Королева бензоколонки";
         String movie2 = "Гладиатор";
@@ -48,7 +48,7 @@ manager.add(movie3);
     }
 
     @Test
-    public void testFindLastWhenLimitMoreSize () {
+    public void testFindLastWhenLimitMoreSize() {
         MovieManager manager = new MovieManager();
         String movie1 = "Королева бензоколонки";
         String movie2 = "Гладиатор";
@@ -69,7 +69,7 @@ manager.add(movie3);
     }
 
     @Test
-    public void testFindLastWhenLimitLessSize () {
+    public void testFindLastWhenLimitLessSize() {
         MovieManager manager = new MovieManager();
         String movie1 = "Королева бензоколонки";
         String movie2 = "Гладиатор";

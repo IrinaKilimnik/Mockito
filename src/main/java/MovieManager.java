@@ -5,11 +5,13 @@ public class MovieManager {
     public MovieManager(int limit) {
         this.limit = limit;
     }
+
     public MovieManager() {
     }
+
     public void add(String newMovie) {
         String[] tmp = new String[movies.length + 1];
-        for (int i = 0; i < movies.length; i++){
+        for (int i = 0; i < movies.length; i++) {
             tmp[i] = movies[i];
         }
         tmp[tmp.length - 1] = newMovie;
@@ -30,8 +32,8 @@ public class MovieManager {
 
         String[] result = new String[resultLength];
         for (int i = 0; i < result.length; i++) {
-            result[i] = movies[movies.length -1 - i];
+            result[i] = movies[movies.length - 1 - i];
         }
-return result;
+        return result;
     }
 }
